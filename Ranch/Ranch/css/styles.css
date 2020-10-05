@@ -28,3 +28,7 @@ section {
     float: right;
     margin-top: -100px;
 }
+
+.clearfix {
+    overflow: auto;
+}
