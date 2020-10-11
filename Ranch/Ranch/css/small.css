@@ -14,7 +14,7 @@ body {
 /* header rules */
 
 header {
-    background-color: #995d77;
+    background-color: rgb(2,77,2);
     color: #BDC6A9;
     padding: 1rem 2%;
 }
@@ -75,7 +75,7 @@ main figcaption {
 footer {
     text-align: center;
     padding: 1rem 2%;
-    background-color: #995d76;
+    background-color: rgb(2,77,2);
     color: #BDC6A9;
 }
 
