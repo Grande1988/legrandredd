@@ -31,6 +31,18 @@ nav ul li a {
     border-top: 1px solid rgba(0,0,0,0.3)
 }
 
-nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
 
 nav ul li.active a{background-color: rgba(0,0,0,0.2); color: #ffff;}
+
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
