@@ -1,3 +1,3 @@
 function toggleMenu() {
-    console.log("it worked")
+    console.log(document.getElementById("sally").classlist);
 }
