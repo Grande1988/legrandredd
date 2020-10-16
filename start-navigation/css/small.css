@@ -32,7 +32,8 @@ nav ul li a {
 }
 
 div#message {background-color: yellow;}
-
+div.showme{ display: block;}
+div.hideme{ display: none;}
 
 nav ul li.active a{background-color: rgba(0,0,0,0.2); color: #ffff;}
 
