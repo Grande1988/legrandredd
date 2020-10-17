@@ -27,17 +27,27 @@
 </head>
 
 <body>
+    <div id="message" class"">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <section class="sticky"></section>
 <!-- HEADER HERE -->
 	<header>
- <h1>Company Name Here</h1>
-        <h2>Possible Slogan or Tagline</h2>
+     <picture>
+         <img src="images/Site.jpg" alt="This image is the logo for Blanding Weather">
+     </picture>   
+     <section class="heading">
+          <h1>Blanding Weather</h1>
+        <h2 class="motto">Weather is the base camp to adventure!</h2>
+        </section>
+        <button onclick="toggleMenu()"">&#9776;</button>
     </header>
     
     
 <!-- NAVIGATION HERE -->
-    <nav class="clearfix">
+    <nav>
         <button onclick="toggleMenu()">&#9776</button>
-        <ul id="primaryNav" class="">
+        <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -51,8 +61,33 @@
 <!-- CONTENT HERE -->
     <main>
        <h1>Preston</h1>
-       <section class="Blanding Image">
+       <section class="BlandingImage">
            <img class="BlandingImage" src="images/blanding.jpg"
+           <div class="overprint">
+               <h5>Weather <br>
+            Summary</h5>
+                <p>High: 75&#8451;</p>
+                <p>Low:22&#8451;</p>
+                <p>Wind: 1.8 mph</p>
+               </div>
+       </section>
+       <div class="fiveDaysForcast">
+           <hr>
+           <h2>Five Day Forcast</h2>
+           <section class="fiveDaysContainer">
+               <picture class="fiveDaysBackground"><img src="img/fiveDayForecastBackground.jpg" alt=""></picture>
+               <div>
+                   <h5>Monday</h5>
+                   <img src="images/weather icons/Sunny.gif" alt="sunny">
+                   <p>31&#8451;</p>
+               </div>
+               <div></div>
+           </section>
+
+       </div>
+
+                </p>
+           </div>
        </section>
         <p>The page name shoud almost exactly match the menu item. </p>
     </main>
