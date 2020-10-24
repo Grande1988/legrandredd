@@ -60,13 +60,17 @@
        <h1>Preston</h1>
        <section class="hero"></section>
        <picture class="heroImage">
-           <img class="BlandingImage" src="images/blanding.png"
+          <source media="(max-width: 400px)" srcset="images/heroImage/franklnHero-400.jpg">
+          <source media="(max-width: 600px)" srcset="images/heroImage/franklnHero-600.jpg">
+          <img src="images/wdd230_image_franklinOriginal.jpeg" alt="hero image">
+          </picture>
            <div class="overprint">
                <h5>Summary</h5>
                <p>Currently: Sunny</p>
-                <p>High:95&#8457;</p>
+                <p>High: <span id="currentHigh">95</span>&deg;F</p>
+                <p>Wind Chill: <span id="windChill"></span>&deg;F</p>
+                <p>Wind: <span id="wind">4</span>MPH</p>
                 <p>Low:60&#8457;</p>
-                <p>Wind:20MPH</p>
                </div>
        </section>
        <div class="fiveDaysForcast">
@@ -102,7 +106,12 @@
             <hr>
             <section class="article">
                 <h2>Blanding Weather: Blanding is "The Base Camp to Adventure!"
-                    <p></p>
+                    <p>Illud fortitudinem
+                        Privavisse posse pulcherrimum cruciantur exquisitaque minorem temporibus rerum tibi Theophrasti debent saxum prohiberet secunda praeterita? Parentes vexetur legendis primum habendus arare civibus quando mortis diligi Scipio deterret pariant supplicii ocurreret vel. Morbi queo eumque attingere civitas A statu iucunditatis dissentiunt profecto audita vituperatum pugnare Multoque ornatus oratio vim!
+                        Mirari homini Graeci suas</p>
+                       <p> Haeret molita amplificarique obruamus discordant idcirco hic iucunditas admirer insequitur; Quos infinitis sponte mererer iudicare commune simulent sive. Summum solent iucunditas saxum paene hanc potiendi Itaque impetu Accedit efficiantur hoc pars tractatas tua conveniunt.
+                        Quaeritur impendere hunc.</p>
+                       <p>Faciant istius quaerendi horrent causa perspicuum erroribus erroribus Theophrasti obligantur Stoicis audivi dicat decore homo Ego Tuo ob emolumento malle Cyrenaicisque. Sciscat consule habere affecti otiosum ignoratione sapientiam corpus honeste aeque cuius poterit sapienter doctrina honeste quodsi totam. Lictores tractatas ipsa mente disserui Terentianus Tarentinis contumeliae maxime intelleges audiebamus aequi consiliisque.</p>
                 </h2>
 
             </section>
