@@ -47,6 +47,10 @@ nav ul li a {
     border-top: 1px solid rgba(0,0,0,0.3)
 }
 
+.heroImage {
+    display: block;
+    width: 100%;
+}
 div#message {background-color: yellow;}
 div.showme{ display: block;}
 div.hideme{ display: none;}
