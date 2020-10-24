@@ -47,6 +47,9 @@
         display: block;
         flex: 1 1 auto;
     }
+    .overprint {
+        margin-left: 3em;
+    }
     ul li a {
         text-align: center;
         display: inline-flex;
