@@ -66,6 +66,17 @@
             max-width: 860px;
             margin: 0 auto;
         }
+        .overprint{
+            margin-left: 3rem;
+        }
+        .overprint h5{
+            font-size: 2rem;
+            text-align: center;
+            margin: 0 1rem;
+        }
+        .overprint p{
+            font-size: 1.5rem;
+        }
         .fiveDaysForcast{
             display: block;
         }
