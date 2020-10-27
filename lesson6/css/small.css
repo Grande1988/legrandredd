@@ -38,8 +38,32 @@ nav button {
     color: #555;
 }
 nav {
+    margin: 0 auto;
+    max-width: 760px;
     background-color:  #ccc;
     font-family: verdana, sans-serif;
+    }
+    .navigation {
+        list-style: none;
+        padding: 0;
+    }
+    .navigation li:first-child {
+        display: block;;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    }
+    .navigation a:hover {
+        color: white;
+        background-color: black;
     }
 
 nav ul {
