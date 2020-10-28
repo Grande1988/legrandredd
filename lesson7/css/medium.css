@@ -1,0 +1,144 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    header{
+        justify-content:center;
+        display: flex;
+    }
+
+    header picture img{
+        width: 115px;
+        margin-right: 10%;
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+        margin: 0 0 0 0.7rem;
+    }
+
+    .motto {
+        font-size: 1rem;
+        margin: 0 0 0 1rem;
+    }
+    nav button {display: none;}
+
+    nav ul {margin-left: 2%;
+    }
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .8rem 1rem;
+    }
+
+    /***** NAVIGATION MENU *****/
+    section button{
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        max-width: 860px;
+        margin: 0 auto;
+    }
+    ul li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .overprint {
+        margin-left: 3em;
+    }
+    ul li a {
+        text-align: center;
+        display: inline-flex;
+        border: 1px solid rgba(200, 200, 200, 0.9);
+        border-collapse: collapse;
+    }
+
+    nav ul.hide{
+        display: flex;
+    }
+
+    /***** MAIN *****/
+        main{
+            max-width: 860px;
+            margin: 0 auto;
+        }
+        .overprint{
+            margin-left: 3rem;
+        }
+        .overprint h5{
+            font-size: 2rem;
+            text-align: center;
+            margin: 0 1rem;
+        }
+        .overprint p{
+            font-size: 1.5rem;
+        }
+        .fiveDaysForcast{
+            display: block;
+        }
+        .fiveDaysContainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+        .fiveDaysBackground{
+            grid-column: 1 / 6;
+            z-index: -1;
+            grid-row: 1;
+        }
+        .fiveDaysContainer div:nth-child(2){grid-column: 1; grid-row: 1; z-index: 1;}
+        .fiveDaysContainer div:nth-child(3){grid-column: 2; grid-row: 1; z-index: 1;}
+        .fiveDaysContainer div:nth-child(4){grid-column: 3; grid-row: 1;}
+
+        .fiveDaysContainer div{
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.3);
+            width: 75%;
+            height: 80%;
+            justify-self: center;
+            align-self: center;
+            border-radius: 9px;
+        }
+        .fiveDaysContainer div h5{
+            margin-top: 0;
+            font-size: 1.2rem;
+            padding: 0.8rem;
+            background-color: rgba(119, 246, 45, 0.5);
+            border-radius: 9px 9px 0 0;
+            margin-bottom: 0;
+        }
+        .fiveDaysContainer div img{
+            width: 50%;
+            margin: 0 auto;
+        }
+        .fiveDaysContainer div p{
+            font-weight: bold;
+        }
+        .articleImage{
+            max-width: 250px;
+            float: right;
+        }
+        .contactGrid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .contactInfo{
+            grid-column: 1;
+        }
+        iframe{
+            grid-column: 1;
+        }
+        footer{
+            max-width: 860px;
+        }
+        footer p{
+            margin: 9px auto;
+        }
+} /*end medium */
+
