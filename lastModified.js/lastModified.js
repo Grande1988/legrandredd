@@ -1,1 +1,2 @@
-document.getElementById('lastModified').innerHTML = 'Last Updated: ${document.lastModified}';
+let currentdate = document.lastModified;
+document.getElementById('currentdate').textContent = currentDate;
