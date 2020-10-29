@@ -6,7 +6,7 @@ Phone and in iOS */
 
 
 body {
-    font-size: 16px;
+    font-size: 12px;
     background-color: greenyellow;
     font-family: "Ubuntu", sans-serif;
     margin: 0.4rem;
@@ -79,7 +79,15 @@ nav ul li.active a{background-color: rgba(0,0,0,0.2); color: #ffff;}
 
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
+/***** FOOTER*****/
 
+footer{
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(113, 224, 85);
+    padding: 1px;
+
+}
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
