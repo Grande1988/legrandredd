@@ -8,11 +8,12 @@ picture img{
     }
 
 body {
-   max-width: 760px;
-   margin: 0 auto;
-   text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
 }
-picture{
+
+img{
     max-width: 300px;
     max-height: 400px;
 }
