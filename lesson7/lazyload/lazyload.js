@@ -28,7 +28,7 @@ if ('IntersectionObserver' in window) {
     imagesToLoad.forEach((img) => {
         imgObserver.observe(img);
     });
- else {
+else {
     imagesToLoad.forEach((img) => {
         loadImages(img);
     });
