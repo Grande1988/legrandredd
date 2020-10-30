@@ -1,0 +1,17 @@
+body {
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+img{
+    max-width: 300px;
+    max-height: 400px;
+}
+picture-img[data-src]{
+filter: blur(0.2em);
+}
+
+picture img{
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
