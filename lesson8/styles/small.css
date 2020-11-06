@@ -1,0 +1,98 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows
+Phone and in iOS */
+
+/*----------- apply a natural box layout model to all elements -----------*/
+* {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+    font-size: 12px;
+    background-color: greenyellow;
+    font-family: "Ubuntu", sans-serif;
+    margin: 0.4rem;
+}
+.overprint {
+    position: absolute;
+    top: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgba(246,100,25,0.5);
+    border: 2px solid black;
+}
+
+:root {
+    --head-color:
+    rgb(113, 224, 85);
+    --text-color: rgba(47, 72, 88, 1);
+    --divider-color: rgba(242, 100, 25, 1);
+    decoration-color-1: rgba(41, 101, 138, 1);
+    decoration-color-2: rgba(24, 174, 45, 1);
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
+}
+nav {
+    background-color:  #ccc;
+    font-family: verdana, sans-serif;
+    }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: 1px solid rgba(0,0,0,0.3)
+}
+
+.heroImage {
+    display: block;
+    width: 100%;
+}
+section button {
+    grid-column: 3;
+    margin-left: 1rem;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 7px;
+    font-size: 1.6rem;
+    color: #ccc;
+    margin: 0 5vw;
+}
+
+div#message {background-color: yellow;}
+div.showme{ display: block;}
+div.hideme{ display: none;}
+
+nav ul li.active a{background-color: rgba(0,0,0,0.2); color: #ffff;}
+
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+/***** FOOTER*****/
+
+footer{
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(113, 224, 85);
+    padding: 1px;
+
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
