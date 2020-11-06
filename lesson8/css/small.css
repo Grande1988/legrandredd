@@ -35,7 +35,7 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: rgb(0, 92, 12);
+    color: rgba(24, 174, 45, 1);
 }
 nav {
     background-color:  #ccc;
