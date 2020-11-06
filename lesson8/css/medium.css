@@ -1,144 +1,160 @@
-/* 35em is also 560px when basefont is 16px */
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 37.5em) {
 
-    header{
-        justify-content:center;
-        display: flex;
+    header, nav, main, footer {
     }
-
-    header picture img{
-        width: 115px;
-        margin-right: 10%;
+  
+    /* ---------- header ---------- */
+  
+    header {
+      background-image: url('../images/blue-header-background.png');
+      justify-content: center;
     }
-
-    .heading h1 {
-        font-size: 2rem;
-        margin: 0 0 0 0.7rem;
+  
+    header img, header h1, header .subheading {
+      padding: 8px 0px;
     }
-
-    .motto {
-        font-size: 1rem;
-        margin: 0 0 0 1rem;
+  
+    .logo {
+      padding-left: 0px;
     }
-    nav button {display: none;}
-
-    nav ul {margin-left: 2%;
+  
+    header h1 {
+      font-size: 2.2rem;
     }
-    nav ul li {
-        float: left;
+  
+    header .subheading {
+      font-size: 1.2rem;
     }
-
-    nav ul li a {
-        border: none;
-        border-right: 1px solid rgba(0,0,0,0.3);
-        padding: .8rem 1rem;
+  
+    button.hamburger {
+      display: none;
     }
-
-    /***** NAVIGATION MENU *****/
-    section button{
-        display: none;
-    }
+  
+    /* ---------- nav ---------- */
+  
     nav ul {
-        display: flex;
-        max-width: 860px;
-        margin: 0 auto;
+      overflow: hidden;
+      flex-flow: row nowrap;
     }
-    ul li {
-        display: block;
-        flex: 1 1 auto;
+  
+    nav ul li {
+      display: inline-flex;
+      padding: 5px 0px;
+      margin: auto;
     }
-    .overprint {
-        margin-left: 3em;
+  
+    nav ul li a {
+      padding: 8px 10px;
+      border: none;
     }
-    ul li a {
-        text-align: center;
-        display: inline-flex;
-        border: 1px solid rgba(200, 200, 200, 0.9);
-        border-collapse: collapse;
+  
+    nav ul.hide {
+      display: inline-flex;
+      width: 95%;
     }
-
-    nav ul.hide{
-        display: flex;
+  
+    /* ---------- main ---------- */
+  
+    main {
+      padding-bottom: 15px;
     }
-
-    /***** MAIN *****/
-        main{
-            max-width: 860px;
-            margin: 0 auto;
-        }
-        .overprint{
-            margin-left: 3rem;
-        }
-        .overprint h5{
-            font-size: 2rem;
-            text-align: center;
-            margin: 0 1rem;
-        }
-        .overprint p{
-            font-size: 1.5rem;
-        }
-        .fiveDaysForcast{
-            display: block;
-        }
-        .fiveDaysContainer{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-        }
-        .fiveDaysBackground{
-            grid-column: 1 / 6;
-            z-index: -1;
-            grid-row: 1;
-        }
-        .fiveDaysContainer div:nth-child(2){grid-column: 1; grid-row: 1; z-index: 1;}
-        .fiveDaysContainer div:nth-child(3){grid-column: 2; grid-row: 1; z-index: 1;}
-        .fiveDaysContainer div:nth-child(4){grid-column: 3; grid-row: 1;}
-
-        .fiveDaysContainer div{
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            border-collapse: collapse;
-            background-color: rgba(255, 255, 255, 0.3);
-            width: 75%;
-            height: 80%;
-            justify-self: center;
-            align-self: center;
-            border-radius: 9px;
-        }
-        .fiveDaysContainer div h5{
-            margin-top: 0;
-            font-size: 1.2rem;
-            padding: 0.8rem;
-            background-color: rgba(119, 246, 45, 0.5);
-            border-radius: 9px 9px 0 0;
-            margin-bottom: 0;
-        }
-        .fiveDaysContainer div img{
-            width: 50%;
-            margin: 0 auto;
-        }
-        .fiveDaysContainer div p{
-            font-weight: bold;
-        }
-        .articleImage{
-            max-width: 250px;
-            float: right;
-        }
-        .contactGrid{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-        .contactInfo{
-            grid-column: 1;
-        }
-        iframe{
-            grid-column: 1;
-        }
-        footer{
-            max-width: 860px;
-        }
-        footer p{
-            margin: 9px auto;
-        }
-} /*end medium */
-
+  
+    h2 {
+      font-size: 1.9rem;
+    }
+  
+    main h2 {
+      display: none;
+    }
+  
+    .town-summary {
+      display: flex;
+      flex-flow: row nowrap;
+      align-content: flex-start;
+      justify-content: center;
+    }
+  
+    .franklin {
+      height: 280px;
+    }
+  
+    .town-summary picture{
+      flex: 1 1 50%;
+      padding-top: 20px;
+    }
+  
+    .weather-summary {
+      padding: 5px 0px;
+      flex: 1 1 50%;
+    }
+  
+    .weather-summary h2 {
+      display: flex;
+      padding-bottom: 10px;
+    }
+  
+    .weather-type {
+      font-size: 2.0rem;
+    }
+  
+    .current {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .current picture {
+    }
+  
+    section.forecast {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+  
+    .forecast table {
+      text-align: left;
+    }
+  
+    .forecast th {
+      padding: 5px 0px 5px 5px;
+      background-color: #00487c;
+      color: #ffffff;
+      font-weight: 100;
+    }
+  
+    .forecast td {
+      padding: 5px 0px 0px 0px;
+      text-align: left;
+      border-bottom: 1px solid #0080aa;
+    }
+  
+    .swap {
+      display: inline-block;
+    }
+  
+    .swap picture img {
+      width: 50%;
+      float: right;
+      padding: 0px 0px 0px  15px;
+    }
+  
+    /* ---------- footer ---------- */
+  
+    footer {
+      clear: right;
+    }
+  
+    /* ---------- gallery ---------- */
+  
+    .top-heading {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+  }
+  
