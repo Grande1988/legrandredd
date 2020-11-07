@@ -62,13 +62,13 @@
         <fieldset>
             <legend>Personal Information</legend>
             <label class="top">
-                "Full Name*
-                          "
+                Full Name*
+                          
             <input type="text" name="fullName" pattern="[A-Za-z ]{5,}" placeholder="Full Name" required style=""
             </label>
             <label class="top">
-                "Email
-                          "
+                Email
+                        
                 <input type="email" name="email" 
                 placeholder="youremail@gmail.com">
             </label>
@@ -77,6 +77,30 @@
             </label>
             <label class="top">Zip Code&ast;
                 <input type="number" name="zipcode" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Storm Information</legend>
+            <label class="top">Storm Date
+                <input type="date" name="date">
+            </label>
+            <label class="top">Storm Type
+                <input list="storms" name="storms">
+                <datalist id="storms">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+            </label>
+
+            <label class="range">
+                Storm Severity (1 to 10)
+                <span class="rate">
+                    <input type="range" name="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" class="slider">
+                </span>
             </label>
         </fieldset>
     </form>
