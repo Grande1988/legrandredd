@@ -24,7 +24,7 @@
 <!-- enhance-desktop -->
 <link href="css/large.css" rel="stylesheet">
 
-<title>Preston Idaho Weather</title>     
+<title></title>     
 </head>
 
 <body>
@@ -102,6 +102,27 @@
                     <input type="range" name="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" class="slider">
                 </span>
             </label>
+
+            <label class="top">Storm Region
+                <select name="region">
+                    <option value="Select" selected disabled>Select Region ...</option>
+                    <option value="Franklin">Franklin</option>
+                    <option value="Greenville">Greenville</option>
+                    <option value="Springfield">Springfield</option>
+                </select>
+            </label>
+
+            <div>User in-danger</div>
+            <label class="side">
+                <input type="radio" name="in-danger" value="yes"> Yes
+            </label>
+            <label class="side">
+                <input type="radio" name="in-danger" value="maybe">Maybe
+            </label>
+            <label class="side">
+                <input type="radio" name="in-danger" value="no"> No 
+            </label>
         </fieldset>
+        <input type="submit" value="Send Report" class="submitbutton">
     </form>
 </main>
