@@ -3,8 +3,11 @@
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
-    font-size: 16px;
     font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    font-size: 16px;    
+    max-width: 760px;
+    margin: 0 auto;
     color: #564E4E;
 }
 
