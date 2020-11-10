@@ -18,7 +18,7 @@ body {
     padding: 1rem 1rem;
     border-radius: 8px;
     box-shadow: 5px 5px 5px rgba(246,100,25,0.5);
-    border: 2px solid black;
+    border: 2px solid white;
 }
 
 :root {
