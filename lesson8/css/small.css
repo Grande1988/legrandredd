@@ -64,7 +64,7 @@ section button {
     grid-column: 3;
     margin-left: 1rem;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 7px;
     font-size: 1.6rem;
     color: #ccc;
@@ -100,6 +100,78 @@ footer{
 
 }
 
+/* Storm Center page */
+
+form {
+    max-width: 100%;
+
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid rgba(113, 224, 85);
+    border-radius: 10px;
+    padding: .5rem 2%;
+
+    max-width: 100;
+}
+
+form legend {
+    color: black;
+    margin: 0 1rem;
+    font-family: 'Pathway-Gothic One', sans-serif;
+    font-size: 20px;
+
+
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    font-size: px;
+}
+
+form label.top input, 
+form label.top select {
+    -webkit-apperance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 30%;
+    background-color: rgb(255, 255, 255);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitButn {
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    max-width: 100%;
+}
+
+
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -107,3 +179,6 @@ footer{
     display: table;
     clear: both;
   }
+
+
+  
