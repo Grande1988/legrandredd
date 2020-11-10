@@ -3,4 +3,31 @@
 @media only screen and (min-width: 64rem) {
 
 
+    .galleryMain{
+        max-width: 1100px;
+    }
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gapL 20px;
+        row-gap: 25px;
+        width: 1100px;
+        margin: 0 auto;
+    }
+
+    .gallery picture:nth-child(3n+1) {
+        grid-column: 1;
+    }
+    .gallery picture:nth-child(3n+2){
+        grid-column: 2;
+    }
+    .gallery picture:nth-child(3n+3){
+        grid-column: 3;
+    }
+
+    .gallery picture p{
+        display: block;
+        padding: 0.8rem;
+        text-align: center;
+    }
+
 } /*end large */
