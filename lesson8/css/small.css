@@ -64,7 +64,7 @@ section button {
     grid-column: 3;
     margin-left: 1rem;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 7px;
     font-size: 1.6rem;
     color: #ccc;
@@ -132,7 +132,7 @@ form label.top select {
     color: #555;
     width: 100%;
     max-width: 30%;
-    background-color: rgba(0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
 }
 
 form label.sbs {
