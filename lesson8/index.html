@@ -51,45 +51,25 @@
     </nav>
 </section>
 <main>
-    <h2>Storm Center Submission</h2> 
-    <p class="left">
-        "This interface is intended to be used solely for the relay of storm information to Blanding Weather. Other comments or information should be sent to BlandingWeather at " <a href="mailto:contact@blandingweather.com">contact@blandingweather.com</a>"."
-    </p>  
-    <form method="get" action="thanks.html">
-        <fieldset>
+    <form action="thanks.html">
+        <fieldset>   
             <legend>Personal Information</legend>
-            <label class="top">
-                Full Name*
-                          
-            <input type="text" name="fullName" pattern="[A-Za-z ]{5,}" placeholder="Full Name" required style=""
-            </label>
-            <label class="top">
-                Email
-                        
-                <input type="email" name="email" 
-                placeholder="youremail@gmail.com">
-            </label>
-            <label class="top">Phone&ast;
-                <input type="tel" name="phone" required>
-            </label>
-            <label class="top">Zip Code&ast;
-                <input type="number" name="zipcode" required>
-            </label>
+            <label class="top">Full Name <input type="text" name="fullName" placeholder="Full Name" required></label>
+            <label class="top">Email<input type="email" name="email"  placeholder="something@gmail.com"></label>
+            <label class="top">Phone Number <input type="tel" name="phone" required></label>
+            <label class="top">Zip Code<input type="number" name="zipcode" required></label>
         </fieldset>
 
         <fieldset>
             <legend>Storm Information</legend>
-            <label class="top">Storm Date
-                <input type="date" name="date">
-            </label>
-            <label class="top">Storm Type
-                <input list="storms" name="storms">
+            <label class="top">Storm Date<input type="date" name="date"></label>
+            <label class="top">Storm Type<input list="storms" name="storms"></label>
                 <datalist id="storms">
-                    <option value="Flash Flood">
-                    <option value="Hail">
-                    <option value="Hurricane">
-                    <option value="Thunderstorm">
-                    <option value="Tornado">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
                 </datalist>
             </label>
 
