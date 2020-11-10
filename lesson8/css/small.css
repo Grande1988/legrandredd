@@ -79,7 +79,7 @@ nav ul li.active a{background-color: rgba(0,0,0,0.2); color: #ffff;}
 
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
-form input.submitBtn {
+form input.submitbutton {
     border: none;
     background-color: rgb(23, 80, 0);
     color: white;
