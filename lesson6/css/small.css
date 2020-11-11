@@ -40,7 +40,7 @@ nav button {
 nav {
     margin: 0 auto;
     max-width: 760px;
-    background-color:  #ccc;
+    background-color:  rgba(113, 224, 85);
     font-family: verdana, sans-serif;
     }
     .navigation {
