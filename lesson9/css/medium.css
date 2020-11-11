@@ -1,0 +1,160 @@
+@media only screen and (min-width: 37.5em) {
+
+    header, nav, main, footer {
+    }
+  
+    /* ---------- header ---------- */
+  
+    header {
+      background-image: url('../images/blue-header-background.png');
+      justify-content: center;
+    }
+  
+    header img, header h1, header .subheading {
+      padding: 8px 0px;
+    }
+  
+    .logo {
+      padding-left: 0px;
+    }
+  
+    header h1 {
+      font-size: 2.2rem;
+    }
+  
+    header .subheading {
+      font-size: 1.2rem;
+    }
+  
+    button.hamburger {
+      display: none;
+    }
+  
+    /* ---------- nav ---------- */
+  
+    nav ul {
+      overflow: hidden;
+      flex-flow: row nowrap;
+    }
+  
+    nav ul li {
+      display: inline-flex;
+      padding: 5px 0px;
+      margin: auto;
+    }
+  
+    nav ul li a {
+      padding: 8px 10px;
+      border: none;
+    }
+  
+    nav ul.hide {
+      display: inline-flex;
+      width: 95%;
+    }
+  
+    /* ---------- main ---------- */
+  
+    main {
+      padding-bottom: 15px;
+    }
+  
+    h2 {
+      font-size: 1.9rem;
+    }
+  
+    main h2 {
+      display: none;
+    }
+  
+    .town-summary {
+      display: flex;
+      flex-flow: row nowrap;
+      align-content: flex-start;
+      justify-content: center;
+    }
+  
+    .franklin {
+      height: 280px;
+    }
+  
+    .town-summary picture{
+      flex: 1 1 50%;
+      padding-top: 20px;
+    }
+  
+    .weather-summary {
+      padding: 5px 0px;
+      flex: 1 1 50%;
+    }
+  
+    .weather-summary h2 {
+      display: flex;
+      padding-bottom: 10px;
+    }
+  
+    .weather-type {
+      font-size: 2.0rem;
+    }
+  
+    .current {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .current picture {
+    }
+  
+    section.forecast {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+  
+    .forecast table {
+      text-align: left;
+    }
+  
+    .forecast th {
+      padding: 5px 0px 5px 5px;
+      background-color: #00487c;
+      color: #ffffff;
+      font-weight: 100;
+    }
+  
+    .forecast td {
+      padding: 5px 0px 0px 0px;
+      text-align: left;
+      border-bottom: 1px solid #0080aa;
+    }
+  
+    .swap {
+      display: inline-block;
+    }
+  
+    .swap picture img {
+      width: 50%;
+      float: right;
+      padding: 0px 0px 0px  15px;
+    }
+  
+    /* ---------- footer ---------- */
+  
+    footer {
+      clear: right;
+    }
+  
+    /* ---------- gallery ---------- */
+  
+    .top-heading {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+  }
+  
