@@ -140,5 +140,10 @@
         footer p{
             margin: 9px auto;
         }
+
+        @media only screenand (min-width:35rem)
+        .gallery picture:nth-child(odd) {
+            grid-column: 1/3;
+        }
 } /*end medium */
 
