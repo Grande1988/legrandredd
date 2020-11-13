@@ -24,7 +24,7 @@ body{
 .show{display: block;}
 
 header{
-    background-color:  #55DDE0;
+    background-color:  greenyellow;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -55,7 +55,7 @@ header picture img{
 
 /***** NAVIGATION BAR *****/
 nav{
-    background-color: rgba(51,101,138,1);
+    background-color: rgba(85,221,224,0.6);
     /* font-family: Verdana, sans-serif; */
     display: block;
 }
