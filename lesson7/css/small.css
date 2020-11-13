@@ -137,8 +137,6 @@ hr{
 }
 
 .contactInfo{
-
-    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 7rem;
