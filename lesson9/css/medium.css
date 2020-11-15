@@ -113,7 +113,7 @@
     }
     .places {
       display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;
