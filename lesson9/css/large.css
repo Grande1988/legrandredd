@@ -79,6 +79,10 @@
   .towns {
     display: flex;
   }
+
+  .info {
+    flex-direction: column;
+  }
  /* ---------- gallery ---------- */
 
   .gallery {
