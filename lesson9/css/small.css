@@ -179,9 +179,6 @@ form label.top input:required:valid {
     margin: 10px;
 }
 
-.info {
-    text-align: center;
-}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
