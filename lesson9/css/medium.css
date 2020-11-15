@@ -119,6 +119,9 @@
     align-items: center;
     align-content: center;
     }
+    .places:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
     .forecast table {
       text-align: left;
     }
