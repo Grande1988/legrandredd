@@ -11,6 +11,12 @@ body {
     font-family: "Ubuntu", sans-serif;
     margin: 0.4rem;
 }
+.towns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin:auto;
+}
 .overprint {
     position: absolute;
     top: 2rem;
