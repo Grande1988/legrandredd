@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 64em) {
   /* ---------- nav ---------- */
 
   nav ul li a {
@@ -36,6 +36,9 @@
     padding: 0px;
   }
 
+  .info{
+    flex-direction: column;
+  }
   .weather-summary {
     display: flex;
     flex-direction: row;
@@ -47,7 +50,9 @@
   .weather-summary h2 {
       display: none;
   }
-
+  .towns{
+    display: flex;
+  }
   .weather-type {
     font-size: 2.2rem;
   }
