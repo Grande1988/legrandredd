@@ -36,6 +36,9 @@
     padding: 0px;
   }
 
+  .info{
+    flex-direction: column;
+  }
   .weather-summary {
     display: flex;
     flex-direction: row;
