@@ -169,5 +169,10 @@
       grid-template-columns: 1fr 1fr;
     }
   
+
+  section div img{
+    width: 80%;
+    margin: 0.3rem 10% 0 10%;
+    align-self: end;
   }
-  
+} 
