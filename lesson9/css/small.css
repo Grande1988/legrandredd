@@ -178,6 +178,10 @@ form label.top input:required:valid {
     padding: 20px;
     margin: 10px;
 }
+
+.info{
+    text-align: center;
+}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";

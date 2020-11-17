@@ -132,7 +132,10 @@
       color: #ffffff;
       font-weight: 100;
     }
-  
+    .info {
+      padding: 10px;
+      text-align: center;
+    }
     .forecast td {
       padding: 5px 0px 0px 0px;
       text-align: left;
