@@ -55,6 +55,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1000x;
   }
+  .places:nth-child(odd) {
+    margin: 1rem auto;
+    width: 98%;
+  }
   .weather-type {
     font-size: 2.2rem;
   }
