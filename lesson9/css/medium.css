@@ -56,7 +56,8 @@
     /* ---------- main ---------- */
   
     main {
-      padding-bottom: 15px;
+      max-width: 860px;
+      margin: 0 auto;
     }
   
     h2 {
@@ -87,7 +88,14 @@
       padding: 5px 0px;
       flex: 1 1 50%;
     }
-  
+  .towns{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    max-width: 800px;
+    margin: auto;
+    column-gap: 0.7rem;
+    row-gap: 1rem;
+  }
     .weather-summary h2 {
       display: flex;
       padding-bottom: 10px;
@@ -120,7 +128,9 @@
     align-content: center;
     }
     .places:nth-child(odd) {
-      flex-direction: row-reverse;
+      display: flex;
+      flex-direction: column;
+      width: 50%
     }
     .places:nth-child(even) {
       grid-colum: 2;

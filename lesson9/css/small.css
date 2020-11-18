@@ -13,9 +13,11 @@ body {
 }
 .towns {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1000px;
+    grid-template-columns: 1fr;
+    max-width: 400px;
     margin:auto;
+    column-gap: 0.7rem;
+    row-gap: 1rem;
 }
 .overprint {
     position: absolute;
