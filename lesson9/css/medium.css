@@ -56,7 +56,8 @@
     /* ---------- main ---------- */
   
     main {
-      padding-bottom: 15px;
+      max-width: 860px;
+      margin: 0 auto;
     }
   
     h2 {

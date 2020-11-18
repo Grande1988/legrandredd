@@ -54,7 +54,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1000x;
-    margin: auto;
   }
   .weather-type {
     font-size: 2.2rem;
