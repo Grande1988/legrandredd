@@ -190,6 +190,10 @@ form label.top input:required:valid {
 .info{
     text-align: center;
 }
+
+.index-hero {
+    width: 100%;
+}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
