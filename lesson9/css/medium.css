@@ -169,6 +169,15 @@
       padding: 0px 0px 0px  15px;
     }
   
+    .preston-map {
+      display: block;
+    }
+
+    .preston-map img {
+      width: 300px;
+      margin-right: 30px;
+      
+    }
     /* ---------- footer ---------- */
   
     footer {
