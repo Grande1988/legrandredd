@@ -39,10 +39,15 @@
 <!-- NAVIGATION HERE -->
     <nav class="clearfix">
         <ul >
-            <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Forecast</a></li>
-            <li><a href="#">Report a Storm</a></li>
-            <li><a href="#">Contact Us</a></li>    
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">   
+               <li><a href="#">Home</a></li>
+               <li class="#"><a href="#">Preston</a></li>
+               <li><a href="#">Soda Springs</a></li>
+               <li><a href="#">Fish Haven</a></li> 
+               <li><a href="active">Storm Center</a></li>
+               <li><a href="gallery.html">Gallery</a></li>   
+               <li><a href="lazyload/lazyload.html">Lazy Load</a></li>
         </ul>
     </nav>
     
@@ -68,7 +73,11 @@
     
 <!-- FOOTER HERE -->   
     <footer>
-        &copy; 2020 &bull; LeGrand Redd &bull; 123-555-6789
+        <p>&copy; 2020 | LeGrand Redd | Blanding, Utah | <a href="https://www.byui.edu/online" 
+            target="_blank">BYU-I Online Learning</a></p>
+            <p>Current Date:<span id="current-date"></span></p>
+    </footer>
+    <script src="js/currentDate.js"></script>
     </footer>
 <script src="js/scripts.js"></script>
 </body>
