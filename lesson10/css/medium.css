@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 560px) {
 
     header, nav, main, footer {
     }
@@ -14,6 +14,12 @@
       padding: 8px 0px;
     }
   
+    .fivedayforecast {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
     .logo {
       padding-left: 0px;
     }
@@ -56,7 +62,8 @@
     /* ---------- main ---------- */
   
     main {
-      padding-bottom: 15px;
+      max-width: 64rem;
+      margin: 0% 5px;
     }
   
     h2 {
