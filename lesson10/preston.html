@@ -62,7 +62,24 @@
     </nav>
 
     <main>
-        
+        <h2>Preston Idaho</h2>
+        <div class="hero-div">
+            <picture class="hero-img">
+                <srcset= "(max-width:465px)" src="images/hero-small.jpg">
+                <source media="(max-width:800px)" src="images/hero-medium.jpg">
+                <source media="(max-width:1100px)" src="images/hero-large.jpg">
+                <img src="images/hero-xlarge.jpg" alt="Leaves Hero">                
+            </picture>
+            <div class="weathersummary">
+         
+        </div>
+        <h3 class="fd">Five Day Forecast</h3>
+        <section class="fivedayforecast">
+            
+        </section>
+        <h2>Weather Conditions for <span id="place">city</span></h2>
+        <p>Current Temperature is <span id="currentTemp">00</span>&deg;</p>
+        <p>Current Wind Speed is <span id="windSpeed">xx</span>mph</p>
     </main>
 
     <footer>
@@ -71,6 +88,9 @@
             <p>Current Date:<span id="current-date"></span></p>
     </footer>
     <script src="js/currentDate.js"></script>
+    <script src="js/weathersum.js"></script>
+    <script src="js/fiveday.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
