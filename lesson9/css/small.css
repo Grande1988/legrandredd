@@ -6,7 +6,7 @@ Phone and in iOS */
 
 
 body {
-    font-size: 12px;
+    font-size: 16px;
     background-color: greenyellow;
     font-family: "Ubuntu", sans-serif;
     margin: 0.4rem;
@@ -189,6 +189,10 @@ form label.top input:required:valid {
 
 .info{
     text-align: center;
+}
+
+.index-hero {
+    width: 100%;
 }
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

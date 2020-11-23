@@ -55,22 +55,86 @@
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li> 
             <li><a href="active">Storm Center</a></li>
-            <li><a href="gallery.html">Gallery</a></li>   
-            <li><a href="lazyload/lazyload.html">Lazy Load</a></li>
+            <li><a href="lesson7/gallery.html">Gallery</a></li>   
+            <li><a href="lesson7/lazyload.html">Lazy Load</a></li>
         </ul>
        
     </nav>
 
     <main>
+        <h2>Preston Idaho</h2>
+        <section class="hero-div">
+            <picture class="hero-img">
+                <srcset= "(max-width:465px)" src="images/hero-small.jpg">
+                <source media="(max-width:800px)" src="images/hero-medium.jpg">
+                <source media="(max-width:1100px)" src="images/hero-large.jpg">
+                <img src="images/hero-xlarge.jpg" alt="Leaves Hero">                
+            </picture>
+            <div class="weathersummary">
+                <h3>
+                    Weather Summary
+                </h3>
+                <p>
+                    <h2>Weather Conditions for <span id="place">city</span> </h2>
+                    <p>Currently: <span id="currentTemp">00</span>&deg;</p>
+                    <p>Temp.: <span id="ht"></span>&#8457;</p>
+                    <p>Wind Chill: <span id="hum"></span>%</p>
+                    <p>WindSpeed: <span id="windSpeed">xx</span>MPH</p>
+                </p>
+        </div>
+        </section>
+
+        <h3 class="fd">Five Day Forecast</h3>
+        <section class="fivedayforecast">
+            <article class="prestonart">
+                <div class="prestonartimg">
+                    <img src="images/sodasprings.jpg" alt="Soda Springs">
+                </div>
+                <h3>Preston Idaho</h3>
+                <h4>By: John Doe</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus fermentum justo, ac sollicitudin erat. 
+                    Duis sem odio, facilisis ac orci ut, scelerisque rhoncus mauris. Vivamus in enim justo. Maecenas tincidunt fringilla convallis. Pellentesque augue eros, consectetur non efficitur a, semper vulputate lorem. Nulla dictum gravida tempus. Donec quis aliquet eros. Duis pulvinar quam in est finibus fringilla. Quisque risus nisi, convallis non risus in, convallis pretium nibh. Donec sed justo sed elit ultrices fringilla. Aliquam erat volutpat. Suspendisse nec nunc faucibus, dictum augue a, sollicitudin ex. Duis non luctus magna. Mauris congue vestibulum quam. Suspendisse potenti. Cras erat arcu, tincidunt vitae efficitur imperdiet, scelerisque et diam. Duis vel volutpat mi, faucibus consectetur mauris. Nam scelerisque facilisis pretium. Proin vitae purus risus. Donec pellentesque commodo dapibus. Ut lobortis, dolor vitae vehicula mollis, mi libero ullamcorper lacus, aliquam aliquam turpis augue ut leo. Integer iaculis sapien a volutpat efficitur. Pellentesque urna orci, aliquam ac lorem sed, lacinia dictum lacus. Vestibulum sodales, elit eu pulvinar tempus, ipsum metus tristique tortor, vitae congue nisl metus at dolor. Nulla facilisis ac orci sit amet sodales. Sed non mi rutrum, ornare tellus et, egestas nibh. Suspendisse varius elit eros, a eleifend risus porttitor et. Vestibulum scelerisque nulla non nibh commodo malesuada. Vivamus vitae bibendum ante. Etiam pulvinar, erat a ultricies lacinia, eros erat sollicitudin turpis, a congue ligula massa nec lorem. In id blandit lacus. Aenean sodales ac lectus et dapibus.</p>
+            </article>
+            
+              
+                  <br>
+            </section>
+        </section>
         
     </main>
 
     <footer>
+        <section class="contact-us">
+            <div class="preston-map">
+                <img src="images/preston1.jpg" alt="Map of Preston, Idaho">
+            </div>
+        <div class="address">
+            <b>Base Camp to Adventure Weather Site</b>
+            <br>
+            
+                            103 S Appleview Dr.
+            <br>
+            
+                            Preston, Idaho 83263
+            <br>
+            <br>
+                            ☎ 333-456-7890
+            <br>
+            <br>
+                            ✉ basecamptoadventure@gmail.com
+            <br>
+            <br>
+            
+            
+          </div>
         <p>&copy; 2020 | LeGrand Redd | Blanding, Utah | <a href="https://www.byui.edu/online" 
             target="_blank">BYU-I Online Learning</a></p>
             <p>Current Date:<span id="current-date"></span></p>
     </footer>
     <script src="js/currentDate.js"></script>
+    <script src="js/weathersum.js"></script>
+    <script src="js/fiveday.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

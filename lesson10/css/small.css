@@ -90,6 +90,15 @@ form input.submitbutton {
     max-width: 20rem;
 }
 
+.weathersummary {
+    border: 1px solid black;
+    width: 180px;
+    height: 155px;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    background-color: rgba(142, 175, 157, 0.7);
+}
 /***** FOOTER*****/
 
 footer{
