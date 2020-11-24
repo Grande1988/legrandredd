@@ -82,6 +82,9 @@
       font-size:25px;
     }
     
+    .overprint {
+      margin-left: 3rem;
+    }
     .town-summary {
       display: flex;
       flex-flow: row nowrap;
