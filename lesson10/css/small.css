@@ -95,13 +95,14 @@ form input.submitbutton {
 }
 
 .weathersummary {
-    border: 1px solid black;
-    width: 180px;
-    height: 155px;
-    position: absolute;
-    top: 25px;
-    left: 0px;
-    background-color: rgba(142, 175, 157, 0.7);
+   position: absolute; 
+   top: 2rem;
+   margin-left: 3rem;
+   background-color: rgba(142, 175, 157, 0.7);
+   padding: 1rem 1rem;
+   border-radius: 8px;
+   box-shadow: 5px 5px 5px rgba(246,100,25,0.5);
+   border: 2px solid black;
 }
 /***** FOOTER*****/
 
