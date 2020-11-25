@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Storm Center Submission</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link rel="shortcut icon" href="favicon.ico">
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+<title></title>     
+</head>
+
+<body>
+    <section class="sticky"></section>
+	<header>
+    <section class="heading">
+          <h1>Blanding Weather</h1>
+        <h2 class="motto">Blanding! is the base camp to adventure!</h2>
+        </section>
+        
+    </header>
+     
+<!-- NAVIGATION HERE -->
+        <nav class="clearfix">
+         <ul id="primaryNav" class="hide">   
+            <li><a href="#">Home</a></li>
+            <li class="#"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li> 
+            <li><a href="active">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>   
+            <li><a href="lazyload/lazyload.html">Lazy Load</a></li>
+        </ul>
+    </nav>
+</section>
+<main>
+    <form action="thanks.html">
+        <fieldset>   
+            <legend>Personal Information</legend>
+            <label class="top">Full Name <input type="text" name="fullName" placeholder="Full Name" required></label>
+            <label class="top">Email<input type="email" name="email"  placeholder="something@gmail.com"></label>
+            <label class="top">Phone Number <input type="tel" name="phone" required></label>
+            <label class="top">Zip Code<input type="number" name="zipcode" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Storm Information</legend>
+            <label class="top">Storm Date<input type="date" name="date"></label>
+            <label class="top">Storm Type<input list="storms" name="storms"></label>
+                <datalist id="storms">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+            </label>
+
+            <label class="range">
+                Storm Severity (1 to 10)
+                <span class="rate"> </span>
+                    <input type="range" name="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" class="slider">
+                <datalist id="tickmarks">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </datalist>
+            </label>
+            <label class="top">Storm Region
+                <select name="region">
+                    <option value="Select" selected disabled>Select Region ...</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                </select>
+            </label>
+
+            <div>User in-danger</div>
+            <label class="side">
+                <input type="radio" name="in-danger" value="yes"> Yes
+            </label>
+            <label class="side">
+                <input type="radio" name="in-danger" value="maybe">Maybe
+            </label>
+            <label class="side">
+                <input type="radio" name="in-danger" value="no"> No 
+            </label>
+        </fieldset>
+
+        <fieldset>
+        <legend>Additional Information or Comments</legend>
+        <textarea name="comments" rows="5" cols="33" placeholder="Enter comments here..."></textarea>
+      </fieldset>
+
+        <input type="submit" value="Send Report" class="submitbutton" data-nlok-ref-guid="8ce6a0fc-0ee5-471e-86d2-8c0a4b707e18">
+    </form>
+
+</main>
+
+<footer>
+    <div class="contact">
+      <span class="site-name">Blanding Weather</span><br>
+      123 Main St.<br>
+      Franklin, MN 55333<br>
+      contact@blandingweather.com
+    </div>
+
+    <div class="footer">&copy; 2020 LeGrand Redd</div>
+    </footer>
+
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/toggleHam.js"></script>
+  <script src="scripts/rating.js"></script>
+  </body>
+</html>
