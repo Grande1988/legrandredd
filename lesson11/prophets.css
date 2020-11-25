@@ -1,0 +1,96 @@
+:root {
+    font-family: 'Overpass', serif;
+    font-size: 16px;
+}
+
+body, h1, h2, h3, h4, h5, p {
+    padding: 0;
+    margin: 0;
+}
+
+.cards {    
+    padding: 20px;
+    -webkit-box-shadow: 5px 5px 15px 5px #888888; 
+    box-shadow: 0 -10px 20px -5px  #888888,
+    0 10px 20px -5px  #888888;
+    /*    box-shadow: 5px 5px 15px 5px #888888; */
+    box-sizing: border-box;
+    width: 100%;    
+    max-width: 1800px;
+    margin: 0 auto;
+    display: block;
+    background-color: #dddddd;
+}
+
+.prophet {    
+    box-sizing: border-box;
+    display: block;
+    width: 100%;    
+    padding: 10px 0 30px 0;
+    margin: 0 auto 5px auto;
+    background-color: #b9b9cc;
+    border: 2px solid #8c8cb5;
+    justify-content: center;    
+}
+
+picture {
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5); 
+    display: block;
+    width: 35%;
+    margin: 20px auto 5px auto;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h1, h2 {
+    padding: 0.5rem 0; 
+    text-align: center;
+    font-family: 'Bree Serif';
+    font-weight: bold;
+    color: #4d4d96;
+}
+
+p {
+    text-align: center;
+    padding: 0;
+    font-family: 'Overpass';
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem;
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0 20px 0;    
+    color: #4d4d96;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 35rem) {
+    .cards {    
+        box-shadow: 5px 5px 15px 5px #888888; 
+        width: 94%;    
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 4px;
+    }
+    .prophet {    
+        margin: 0;
+    }
+
+}
