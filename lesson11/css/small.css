@@ -8,6 +8,7 @@ Phone and in iOS */
 body {
     font-size: 16px;
     background-color: greenyellow;
+    color: rgba(6, 69, 173)
     font-family: "Ubuntu", sans-serif;
     margin: 0.4rem;
 }
