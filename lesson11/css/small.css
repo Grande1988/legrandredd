@@ -8,17 +8,8 @@ Phone and in iOS */
 body {
     font-size: 16px;
     background-color: greenyellow;
-    color: rgba(6, 69, 173)
     font-family: "Ubuntu", sans-serif;
     margin: 0.4rem;
-}
-.towns {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 400px;
-    margin:auto;
-    column-gap: 0.7rem;
-    row-gap: 1rem;
 }
 .overprint {
     position: absolute;
@@ -33,7 +24,7 @@ body {
 :root {
     --head-color:
     rgb(113, 224, 85);
-    --text-color: rgba(6, 69, 173);
+    --text-color: rgba(47, 72, 88, 1);
     --divider-color: rgba(242, 100, 25, 1);
     decoration-color-1: rgba(41, 101, 138, 1);
     decoration-color-2: rgba(24, 174, 45, 1);
@@ -61,7 +52,7 @@ nav ul li a {
     display: block;
     padding: .8rem 2%;
     text-decoration: none;
-    color: rgb(6, 69, 173;
+    color: #000;
     border-top: 1px solid rgba(0,0,0,0.3)
 }
 
@@ -78,6 +69,10 @@ section button {
     font-size: 1.6rem;
     color: #ccc;
     margin: 0 5vw;
+}
+
+.hero{
+    position: relative;
 }
 
 div#message {background-color: yellow;}
@@ -99,9 +94,19 @@ form input.submitbutton {
     max-width: 20rem;
 }
 
+.weathersummary {
+   position: absolute; 
+   top: 2rem;
+   margin-left: 3rem;
+   background-color: rgba(142, 175, 157, 0.7);
+   padding: 1rem 1rem;
+   border-radius: 8px;
+   box-shadow: 5px 5px 5px rgba(246,100,25,0.5);
+   border: 2px solid black;
+}
 /***** FOOTER*****/
 
-footer {
+footer{
     text-align: center;
     margin: 0 auto;
     background-color: rgba(113, 224, 85);
@@ -187,24 +192,12 @@ form label.top input:required:valid {
     padding: 20px;
     margin: 10px;
 }
-
-.info{
-    text-align: center;
-}
-
-.index-hero {
-    width: 100%;
-}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
   }
-section div img {
-    width: 80%;
-    margin: 0.3rem 10% 0 10%;
-    align-self: end;
-}
+
 
   
