@@ -30,3 +30,4 @@ if (tempnumber <= 50 && speedNumber > 3) {
    //console.log(document.getElementById("wc"));
 
   });
+
