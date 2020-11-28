@@ -56,6 +56,13 @@
     margin: 0px;
   }
 
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
   .conditions {
     padding-bottom: 0px;
     display: flex;
