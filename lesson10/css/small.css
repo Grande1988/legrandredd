@@ -48,6 +48,18 @@ nav ul {
     margin: 0;
 }
 
+.ham {
+    position: relative;
+    top: 12px;
+    right: 0;
+    margin: 0;
+    font-size: 30px;
+    float: right;
+    background-color: #ddefff;
+    border: none;
+    color: #14dd14;
+}
+
 nav ul li a {
     display: block;
     padding: .8rem 2%;
