@@ -48,6 +48,9 @@ nav ul {
     margin: 0;
 }
 
+nav ul.hide {
+    display: none;
+}
 .ham {
     position: relative;
     top: 12px;
