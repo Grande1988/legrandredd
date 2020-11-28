@@ -192,9 +192,15 @@
     }
   
     .gallery {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 30px;
+      row-gap:30px;
+      margin: 0 5vw;
     }
   
+    .gallery picture:nth-child(odd) {
+      grid-column: 1/3;
+    }
 
   section div img{
     width: 80%;

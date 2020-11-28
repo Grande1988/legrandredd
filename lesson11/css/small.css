@@ -104,6 +104,18 @@ form input.submitbutton {
    box-shadow: 5px 5px 5px rgba(246,100,25,0.5);
    border: 2px solid black;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 1vw;
+    max-width:100%;
+}
+
+.gallery picture {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
 /***** FOOTER*****/
 
 footer{
