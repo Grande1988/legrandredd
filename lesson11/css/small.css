@@ -57,6 +57,14 @@ nav ul li a {
     border-top: 1px solid rgba(0,0,0,0.3)
 }
 
+nav li:first-child {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
 .heroImage {
     display: block;
     width: 100%;
