@@ -7,7 +7,9 @@
   
     header {
       background-image: url('../images/blue-header-background.png');
+      align-items: center;
       justify-content: center;
+
     }
   
     header img, header h1, header .subheading {
