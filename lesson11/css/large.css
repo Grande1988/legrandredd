@@ -113,6 +113,13 @@
     0 6px 20px 0 rgba(0, 0, 0.19);
     margin-bottom: 20px;
   }
+
+  .gallery picture p {
+    display: block;
+    padding: 0.8rem;
+    text-align: center;
+  }
+  
   .box-shadow:hover {
     box-shadow: 5px 5px 10px gray;
   }
