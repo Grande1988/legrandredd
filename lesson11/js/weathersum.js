@@ -1,4 +1,4 @@
-const apiTodayURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=07d69392c2d3f3ab2bad84858761877"
+const apiTodayURL = "//api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=07d69392c2d3f3ab2bad848587618771"
 
 fetch(apiTodayURL)
     .then((response) => response.json())
