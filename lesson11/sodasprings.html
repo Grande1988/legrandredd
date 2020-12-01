@@ -6,7 +6,7 @@
 <meta name="author" content="John Doe">
 
 <!-- This start file was build by Paul Cheney  -->
-<title>BCA Weather</title>
+<title>Soda Springs</title>
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -25,7 +25,7 @@
 <link href="css/large.css" rel="stylesheet">
 <!-- lazylad css -->
 <link rel="stylesheet" href="homepage.css">
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Ubuntu&display=swap" rel="stylesheet">
 <!-- toggleMenu() -->
 <script src="js/scripts.js"></script>
 <!-- Typography -->
@@ -35,12 +35,13 @@
 <body>
     <section class="sticky"></section>
 	<header>
-        <picture>
-            <img src="images/blanding copy 3.png" alt="This image is the logo for Blanding Weather.">
-        </picture> 
-    <section class="heading">
-          <h1>Base Camp to Adventure</h1>
-    </section>
+        <section class="heading">
+          <h2>Soda Springs</h2>
+          <picture>
+            <img src="images/blanding copy 3.png">
+          </picture>
+        <h3 class="motto">Base Camp to Adventure!</h3>
+        </section>
         
     </header>
      
@@ -49,42 +50,79 @@
         <nav class="clearfix">
             <button onclick="toggleMenu()">&#9776;</button>
          <ul id="primaryNav" class="hide">   
-            <li><a href="#">Home</a></li>
-            <li class="#"><a href="#">Preston</a></li>
-            <li><a href="#">Soda Springs</a></li>
-            <li><a href="#">Fish Haven</a></li> 
-            <li><a href="active">Storm Center</a></li>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li> 
+            <li><a href="stormcenter.html">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>   
-            <li><a href="lazyload.html">Lazy Load</a></li>
-        </ul>
+         </ul>
        
     </nav>
 
     <main>
-        <h2>Preston Idaho</h2>
-        <section class="hero">
-            <picture class="hero-img">
-                <source media="(max-width:800px)" src="images/franklinHero-600 (1).jpg">
-                <source media="(max-width:1100px)" src="images/franklinHero-900 (1).jpg">
-                <img src="images/franklinHero-900 (1).jpg" alt="Leaves Hero">                
-            </picture>
-            <div class="weathersummary">
-                <h3>
-                    Weather Summary
-                </h3>
-                <p>
-                    <h2>Weather Conditions for <span id="place">city</span> </h2>
-                    <p>Currently: <span id="currentTemp">00</span>&deg;</p>
-                    <p>Temp.: <span id="ht"></span>&#8457;</p>
-                    <p>Wind Chill: <span id="hum"></span>%</p>
-                    <p>Humidity: <span id=""></span>%</p>
-                    <p>Wind Speed: <span id="windSpeed">xx</span>MPH</p>
-                </p>
+      <h1 id="cityName">Soda Springs</h1>
+      <section class="hero">
+        <picture class="heroImage">
+        <source media="(max-width:800px)" src="images/franklinHero-600 (1).jpg">
+          <source media="(max-width:1100px)" src="images/franklinHero-900 (1).jpg">
+          <img src="images/franklinHero-900 (1).jpg" alt="Leaves Hero"> 
+        </picture>
+        <div class="overprint">
+          <h3>
+            Weather Summary
+        </h3>
+        <p>
+            <h2>Weather Conditions for <span id="place">city</span> </h2>
+            <p>Currently: <span id="currentTemp">00</span>&deg;</p>
+            <p>Temp.: <span id="ht"></span>&#8457;</p>
+            <p>Wind Chill: <span id="hum"></span>%</p>
+            <p>Humidity: <span id=""></span>%</p>
+            <p>Wind Speed: <span id="windSpeed">xx</span>MPH</p>
+        </p>
         </div>
-        </section>
-
-        <h3 class="fd">Five Day Forecast</h3>
-        <section class="fivedayforecast">
+      </section>
+      <div class="fiveDaysForecast"></div>
+      <hr>
+      <h2>Five Day Forecast</h2>
+      <section class="fiveDay"></section>
+        <picture class="fiveDaysBackground"><img src="images/fiveDaysBackground.jpg" alt=""></picture>
+        <div>
+          <h5 class="forcastDayName" id="forecastDay1"></h5>
+          <img src="images/1px-placeholder.png" alt="" id="forecastIcon1">
+          <p><span id="max1" class="max"></span>&deg;F</p>
+          <div>
+            <h5 class="forecastDayName" id="forecastDay2"></h5>
+            <img src="images/1px-placeholder.png" alt="" id="forecastIcon2">
+            <p><span id="max2" class="max"></span>&deg;F</p>
+            <!-- <p><span id="min2" class="min"></span>&deg;F</p> -->
+        </div>
+        <div>
+            <h5 class="forecastDayName" id="forecastDay3"></h5>
+            <img src="images/1px-placeholder.png" alt="" id="forecastIcon3">
+            <p><span id="max3" class="max"></span>&deg;F</p>
+            <!-- <p><span id="min3" class="min"></span>&deg;F</p> -->
+        </div>
+        <div>
+            <h5 class="forecastDayName" id="forecastDay4"></h5>
+            <img src="images/1px-placeholder.png" alt="" id="forecastIcon4">
+            <p><span id="max4" class="max"></span>&deg;F</p>
+            <!-- <p><span id="min4" class="min"></span>&deg;F</p> -->
+        </div>
+        <div>
+            <h5 class="forecastDayName" id="forecastDay5"></h5>
+            <img src="images/1px-placeholder.png" alt="" id="forecastIcon5">
+            <p><span id="max5" class="max"></span>&deg;F</p>
+            <!-- <p><span id="min5" class="min"></span>&deg;F</p> -->
+        </div>
+        </div>
+      <section class="events">
+        <h2>These are most important events in Soda Springs:</h2>
+        <p>February 29: Geyser Song Day</p>
+        <p>May 1-6: Days of May Celebration</p>
+        <p>October 15-16: Octoberfest</p>
+      </section>
+      <hr>
             <article class="prestonart">
                 <div class="prestonartimg">
                     <img src="images/sodasprings.jpg" alt="Soda Springs">
@@ -94,15 +132,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus fermentum justo, ac sollicitudin erat. 
                     Duis sem odio, facilisis ac orci ut, scelerisque rhoncus mauris. Vivamus in enim justo. Maecenas tincidunt fringilla convallis. Pellentesque augue eros, consectetur non efficitur a, semper vulputate lorem. Nulla dictum gravida tempus. Donec quis aliquet eros. Duis pulvinar quam in est finibus fringilla. Quisque risus nisi, convallis non risus in, convallis pretium nibh. Donec sed justo sed elit ultrices fringilla. Aliquam erat volutpat. Suspendisse nec nunc faucibus, dictum augue a, sollicitudin ex. Duis non luctus magna. Mauris congue vestibulum quam. Suspendisse potenti. Cras erat arcu, tincidunt vitae efficitur imperdiet, scelerisque et diam. Duis vel volutpat mi, faucibus consectetur mauris. Nam scelerisque facilisis pretium. Proin vitae purus risus. Donec pellentesque commodo dapibus. Ut lobortis, dolor vitae vehicula mollis, mi libero ullamcorper lacus, aliquam aliquam turpis augue ut leo. Integer iaculis sapien a volutpat efficitur. Pellentesque urna orci, aliquam ac lorem sed, lacinia dictum lacus. Vestibulum sodales, elit eu pulvinar tempus, ipsum metus tristique tortor, vitae congue nisl metus at dolor. Nulla facilisis ac orci sit amet sodales. Sed non mi rutrum, ornare tellus et, egestas nibh. Suspendisse varius elit eros, a eleifend risus porttitor et. Vestibulum scelerisque nulla non nibh commodo malesuada. Vivamus vitae bibendum ante. Etiam pulvinar, erat a ultricies lacinia, eros erat sollicitudin turpis, a congue ligula massa nec lorem. In id blandit lacus. Aenean sodales ac lectus et dapibus.</p>
             </article>
-            
-              
-                  <br>
-            </section>
-        </section>
-        
-    </main>
-
-    <footer>
+      <footer>
         <section class="contact-us">
             <div class="preston-map">
                 <img src="images/preston1.jpg" alt="Map of Preston, Idaho">
@@ -131,10 +161,11 @@
             <p>Current Date:<span id="current-date"></span></p>
     </footer>
     <script src="js/currentDate.js"></script>
-    <script src="js/weathersum.js"></script>
     <script src="js/fiveday.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/responsiveMenu.js"></script>
+    <script src="js/weather-sodasprings.js"></script>
+    <script src="js/forecast_sodasprings.js"></script>
 </body>
 
 </html>

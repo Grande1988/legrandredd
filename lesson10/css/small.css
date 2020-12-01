@@ -48,6 +48,21 @@ nav ul {
     margin: 0;
 }
 
+nav ul.hide {
+    display: none;
+}
+.ham {
+    position: relative;
+    top: 12px;
+    right: 0;
+    margin: 0;
+    font-size: 30px;
+    float: right;
+    background-color: #ddefff;
+    border: none;
+    color: #14dd14;
+}
+
 nav ul li a {
     display: block;
     padding: .8rem 2%;
@@ -176,6 +191,18 @@ form input.submitButn {
     max-width: 100%;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 1vw;
+    max-width: 100%;
+}
 
 
 form label.top input:required {

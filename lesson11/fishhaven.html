@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Fish Haven</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link rel="shortcut icon" href="favicon.ico">
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+<!-- lazylad css -->
+<link rel="stylesheet" href="homepage.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Ubuntu&display=swap" rel="stylesheet">
+<!-- toggleMenu() -->
+<script src="js/scripts.js"></script>
+<!-- Typography -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="sticky"></section>
+	<header>
+        <section class="heading">
+          <h2>Fish Haven</h2>
+          <picture>
+            <img src="images/blanding copy 3.png" alt="This image is the logo for Blanding Weather.">
+        </picture>   
+        <h3 class="motto">Base Camp to Adventure!</h3>
+        </section>
+        
+    </header>
+     
+<!-- NAVIGATION HERE -->
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+         <ul id="primaryNav" class="hide">   
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li> 
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>   
+         </ul>
+       
+    </nav>
+
+    <main>
+      <h1>Fish Haven</h1>
+      <section class="hero">
+        <picture class="heroImage">
+        <source media="(max-width:800px)" src="images/franklinHero-600 (1).jpg">
+          <source media="(max-width:1100px)" src="images/franklinHero-900 (1).jpg">
+          <img src="images/franklinHero-900 (1).jpg" alt="Leaves Hero"> 
+        </picture>
+        <div class="overprint">
+          <h3>
+            Weather Summary
+        </h3>
+        <p>
+            <h2>Weather Conditions for <span id="place">city</span> </h2>
+            <p>Currently: <span id="currentTemp">00</span>&deg;</p>
+            <p>Temp.: <span id="ht"></span>&#8457;</p>
+            <p>Wind Chill: <span id="hum"></span>%</p>
+            <p>Humidity: <span id=""></span>%</p>
+            <p>Wind Speed: <span id="windSpeed">xx</span>MPH</p>
+        </p>
+        </div>
+      </section>
+      <div class="fiveDaysForecast"></div>
+      <hr>
+      <div>
+        <h5 class="forcastDayName" id="forecastDay1"></h5>
+        <img src="images/1px-placeholder.png" alt="" id="forecastIcon1">
+        <p><span id="max1" class="max"></span>&deg;F</p>
+        <div>
+          <h5 class="forecastDayName" id="forecastDay2"></h5>
+          <img src="images/1px-placeholder.png" alt="" id="forecastIcon2">
+          <p><span id="max2" class="max"></span>&deg;F</p>
+          <!-- <p><span id="min2" class="min"></span>&deg;F</p> -->
+      </div>
+      <div>
+          <h5 class="forecastDayName" id="forecastDay3"></h5>
+          <img src="images/1px-placeholder.png" alt="" id="forecastIcon3">
+          <p><span id="max3" class="max"></span>&deg;F</p>
+          <!-- <p><span id="min3" class="min"></span>&deg;F</p> -->
+      </div>
+      <div>
+          <h5 class="forecastDayName" id="forecastDay4"></h5>
+          <img src="images/1px-placeholder.png" alt="" id="forecastIcon4">
+          <p><span id="max4" class="max"></span>&deg;F</p>
+          <!-- <p><span id="min4" class="min"></span>&deg;F</p> -->
+      </div>
+      <div>
+          <h5 class="forecastDayName" id="forecastDay5"></h5>
+          <img src="images/1px-placeholder.png" alt="" id="forecastIcon5">
+          <p><span id="max5" class="max"></span>&deg;F</p>
+          <!-- <p><span id="min5" class="min"></span>&deg;F</p> -->
+      </div>
+      <section class="events">
+        <h2>These are most important events in Fish Haven:</h2>
+        <p>April 1: How Bis Was that Fish Day</p>
+        <p>May 15-30: Rush the Creek Days</p>
+        <p>July 24: Bear Lake Blunder Run</p>
+        <p>December 12: Light the Tree</p>
+      </section>
+      <section class="article">
+        <h2>Blanding Weather is the best weather in Utah</h2>
+        <p>
+          Obligantur praeclaram tantis intellegitur foris urbane eloquentiam sane Huic apud oportet filium summum Latinam mentitum?
+Audeam natura quot litteris rebus nacti optimum 39 perpauca humili huic nam chorusque Democritea horrida.
+Turpius postea nutu invenire expeteretur Caecilii inprobitatem quaeritur mediocriterne ferreum  vita legendum ipsam meminerit.
+        </p>
+        <img class="articleImage" src="images/fishhaven.jpg" alt="Picture of Fish Haven">
+        <p>Consequi meque robustus Utinam oriantur discordans errata cupiditatum audivi tractavissent quondam habeatur voluptatis indicaverunt peccandi.
+          Hominem comit delectamur aut discere solet accusantibus Eademque careat accedunt ignota sollicitare faciendi inesse omnes?
+          Sitne concessum tua Ut conferebamus verterem Quodsi ordiamur cepisse inesse consiliisque omittendis fortitudinis investigandi soluta.</p>
+          <p>
+            Habuit inpotenti iudico certissimam industriae cupiditates perfunctio eum divelli difficile Brutus Romanum gratia dici apeirian vivere distinctio modi explentur. Meminerimus intelleges quia muniti Tu nemo per videtur levis moveat quaeritur putarent versatur dolor. Sequimur suavitate putas morbi legendos perdiderunt homine inclusae. Titillaret praetore inculta inesse iucunditatis quietae gubernatoris laudatum, Praeclare poenis scilicet Neque mens cur linguam abducat profecto cadere iniurias ab posse ornatus complectitur. Disciplinis Homero unum doctrinis opibus docet miserum infinito minuti possent eorumque ullus Statue ius utrumvis.
+          </p>
+      </section>
+      <hr>
+    </main>
+      <footer>
+        <p>&copy; 2020 | LeGrand Redd | Blanding, Utah | <a href="https://www.byui.edu/online" 
+                target="_blank">BYU-I Online Learning</a></p>
+        <p>Current Date: <span id="current-date"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/currentDate.js"></script>
+    <script src="js/responsiveMenu.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/message.js"></script>
+
+</body>
+</html>
+    
+     

@@ -11,17 +11,10 @@ body {
     font-family: "Ubuntu", sans-serif;
     margin: 0.4rem;
 }
-.towns {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 400px;
-    margin:auto;
-    column-gap: 0.7rem;
-    row-gap: 1rem;
-}
 .overprint {
     position: absolute;
     top: 2rem;
+    margin-left: 3rem;
     background-color: rgba(255, 255, 255, 0.3);
     padding: 1rem 1rem;
     border-radius: 8px;
@@ -64,6 +57,14 @@ nav ul li a {
     border-top: 1px solid rgba(0,0,0,0.3)
 }
 
+nav li:first-child {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
 .heroImage {
     display: block;
     width: 100%;
@@ -77,6 +78,10 @@ section button {
     font-size: 1.6rem;
     color: #ccc;
     margin: 0 5vw;
+}
+
+.hero{
+    position: relative;
 }
 
 div#message {background-color: yellow;}
@@ -98,6 +103,28 @@ form input.submitbutton {
     max-width: 20rem;
 }
 
+.weathersummary {
+   position: absolute; 
+   top: 2rem;
+   margin-left: 3rem;
+   background-color: rgba(142, 175, 157, 0.7);
+   padding: 1rem 1rem;
+   border-radius: 8px;
+   box-shadow: 5px 5px 5px rgba(246,100,25,0.5);
+   border: 2px solid black;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 1vw;
+    max-width:100%;
+}
+
+.gallery picture {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
 /***** FOOTER*****/
 
 footer{
@@ -186,24 +213,12 @@ form label.top input:required:valid {
     padding: 20px;
     margin: 10px;
 }
-
-.info{
-    text-align: center;
-}
-
-.index-hero {
-    width: 100%;
-}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
   }
-section div img {
-    width: 80%;
-    margin: 0.3rem 10% 0 10%;
-    align-self: end;
-}
+
 
   
