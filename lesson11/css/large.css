@@ -124,18 +124,11 @@
     text-align: center;
   }
 
-  .gallery picture:hover {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
-  }
-
   picture img[data-src]{
-    filter: blur(0.2em);
+    filter: blur(0.2em)
   }
- 
-  picture img {
-    filter: blur(0em);
-    transition: filter 0.5s;
+  .box-shadow:hover {
+    box-shadow: 5px 5px 10px gray;
   }
-
 
 }
