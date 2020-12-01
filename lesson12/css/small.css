@@ -21,7 +21,10 @@ body {
     box-shadow: 5px 5px 5px rgba(246,100,25,0.5);
     border: 2px solid black;
 }
-
+.motto {
+    font-size: 0.8rem;
+    margin: 0 0 0 0.5rem;
+}
 :root {
     --head-color:
     rgb(#0E3B43);
