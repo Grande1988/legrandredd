@@ -37,11 +37,9 @@ nav button {
     border: none;
     font-size: 1.6rem;
     color: rgba(24, 174, 45, 1);
-    --text-color: rgba(47, 72, 88, 1);
 }
 nav {
     background-color:  rgba(113, 224, 85);
-    --text-color: rgba(47, 72, 88, 1);
     font-family: verdana, sans-serif;
     text-align: center;
     border-radius: 5px;
