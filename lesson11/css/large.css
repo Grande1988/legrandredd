@@ -102,12 +102,8 @@
   }
  /* ---------- gallery ---------- */
 
- .gallery Title{
-   text-align: center;
- }
   .gallery {
-    display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .gallery picture {
@@ -117,16 +113,7 @@
     0 6px 20px 0 rgba(0, 0, 0.19);
     margin-bottom: 20px;
   }
-
-  .gallery picture p {
-    display: block;
-    padding: 0.8rem;
-    text-align: center;
-  }
-
-  picture img[data-src]{
-    filter: blur(0.2em)
-  }
+  
   .box-shadow:hover {
     box-shadow: 5px 5px 10px gray;
   }
