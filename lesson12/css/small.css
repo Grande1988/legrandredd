@@ -7,7 +7,7 @@ Phone and in iOS */
 
 body {
     font-size: 16px;
-    background-color: #0E3B43;
+    background-color: #357266;
     font-family: "Ubuntu", sans-serif;
     margin: 0.4rem;
 }
@@ -28,7 +28,7 @@ body {
 :root {
     --head-color:
     rgb(#0E3B43);
-    --text-color: rgba(47, 72, 88, 1);
+    --text-color: rgba(75, 72, 88, 1);
     --divider-color: rgba(242, 100, 25, 1);
     decoration-color-1: rgba(41, 101, 138, 1);
     decoration-color-2: rgba(24, 174, 45, 1);
@@ -39,11 +39,12 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: rgba(24, 174, 45, 1);
+    color: #357266;
 }
 nav {
-    background-color:  rgba(113, 224, 85);
-    font-family: verdana, sans-serif;
+    background-color:  #A3BBAD;
+    font-family: sans-serif, sans-serif;
+    font-size: 
     text-align: center;
     border-radius: 5px;
     }
