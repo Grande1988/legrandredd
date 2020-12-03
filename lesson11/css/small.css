@@ -122,6 +122,12 @@ form input.submitbutton {
     max-width: 20rem;
 }
 
+.towns {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
 .weathersummary {
    position: absolute; 
    top: 1rem;
