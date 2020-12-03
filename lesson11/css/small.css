@@ -4,6 +4,12 @@ Phone and in iOS */
 /*----------- apply a natural box layout model to all elements -----------*/
 * {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 body {
     font-size: 16px;
@@ -52,7 +58,7 @@ nav ul {
     margin: 0;
 }
 
-nav ul.hide {
+.hide {
     display: none;
 }
 
@@ -64,9 +70,6 @@ nav ul li a {
     border-top: 1px solid rgba(0,0,0,0.3)
 }
 
-nav li:first-child {
-    display: none;
-}
 
 .responsive li {
     display: block;
@@ -75,7 +78,9 @@ nav li:first-child {
 .heroImage {
     display: block;
     width: 100%;
+    border: solid 2px black;
 }
+
 section button {
     grid-column: 3;
     margin-left: 1rem;
@@ -91,11 +96,19 @@ section button {
     position: relative;
 }
 
-div#message {background-color: yellow;}
-div.showme{ display: block;}
-div.hideme{ display: none;}
+h1 {
+    text-align: center;
+}
 
-nav ul li.active a{background-color: rgba(0,0,0,0.2); color: #ffff;}
+.index-article {
+    text-align: center;
+}
+
+#message {background-color: yellow;}
+.showme{ display: block;}
+.hideme{ display: none;}
+
+.active {background-color: rgba(0,0,0,0.2); color: #ffff;}
 
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
@@ -112,15 +125,23 @@ form input.submitbutton {
 
 .weathersummary {
    position: absolute; 
-   top: 2rem;
-   margin-left: 3rem;
+   top: 1rem;
+   margin-left: 1rem;
    background-color: rgba(142, 175, 157, 0.7);
-   padding: 1rem 1rem;
+   padding: 5px;
    border-radius: 8px;
-   box-shadow: 5px 5px 5px rgb(113, 224, 85);
+   box-shadow: 5px 5px 5px rgb(145, 146, 145, .5);
    border: 2px solid black;
+   font-size: 10px;
 }
 
+.weathersummary h3 {
+    font-size: 10px;
+}
+
+.weathersummary p {
+    margin: 5px;
+}
 .gallery {
     display: grid;
     grid-template-columns: 1fr;

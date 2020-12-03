@@ -112,9 +112,9 @@ form input.submitbutton {
 .weathersummary {
    position: absolute; 
    top: 2rem;
-   margin-left: 3rem;
+   margin-left: 1rem;
    background-color: rgba(142, 175, 157, 0.7);
-   padding: 1rem 1rem;
+   padding: 10px;
    border-radius: 8px;
    box-shadow: 5px 5px 5px rgba(246,100,25,0.5);
    border: 2px solid black;
