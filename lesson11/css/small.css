@@ -6,7 +6,6 @@ Phone and in iOS */
 
 .heading {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
