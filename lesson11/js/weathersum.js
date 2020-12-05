@@ -24,10 +24,10 @@ fetch(apiURL)
     //Once it comes back, display it to the console.
     console.log(jsObject);
     
-    document.getElementById("currentCondition").innerHTML=jsObject.weather[0].main;
-    document.getElementById("currentHigh").innerHTML=jsObject.main.temp;
-    document.getElementById("humidity").innerHTML=jsObject.main.humidity;
-    document.getElementById("wind").innerHTML=jsObject.wind.speed;
+    document.getElementById("currentTemp").innerHTML=jsObject.weather[0].main;
+    document.getElementById("ht").innerHTML=jsObject.main.temp;
+    document.getElementById("hum").innerHTML=jsObject.main.humidity;
+    document.getElementById("windSpeed").innerHTML=jsObject.wind.speed;
 
     let tempF = jsObject.main.temp; //Temperature variable for the windchill
     let speed = jsObject.wind.speed; //Windspeed variable for the windchill
