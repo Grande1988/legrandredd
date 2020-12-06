@@ -3,7 +3,7 @@
 const apiKey = "76906579f4efc58a128720f93bf9efd1";
 const prestonID = "5604473";
 const sodaID = "5607916"; 
-const fishID = "5585010";
+const fishID = "5585000";
 var cityId;
 
 var city = document.getElementById("cityName").innerText;
