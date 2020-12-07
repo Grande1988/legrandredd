@@ -81,7 +81,7 @@ section button {
     border: 1px solid black;
     border-radius: 7px;
     font-size: 1.6rem;
-    color: #ccc;
+    color: black;
     margin: 0 5vw;
 }
 
@@ -89,7 +89,7 @@ section button {
     position: relative;
 }
 
-div#message {background-color: yellow;}
+div#message {background-color: #ABDADC;}
 div.showme{ display: block;}
 div.hideme{ display: none;}
 
@@ -161,10 +161,14 @@ form legend {
     margin: 0 1rem;
     font-family: 'Pathway-Gothic One', sans-serif;
     font-size: 20px;
-
-
 }
-
+#message {
+    display: flex;
+    flex-flow: row-reverse;
+    border: solid 3px black;
+    background-color: whitesmoke;
+    margin: 10px;
+}
 form label.top,
 form div {
     display: block;
@@ -202,7 +206,13 @@ form input.submitButn {
     max-width: 100%;
 }
 
-
+.vehicle {
+    border: solid 3px black;
+    margin: 15px;
+    padding: 10px;
+    background-color: #ABDADC;
+}
+.
 
 form label.top input:required {
     border-left: red solid 6px;

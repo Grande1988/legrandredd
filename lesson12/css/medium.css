@@ -76,6 +76,10 @@
       font-weight: bold;
     }
   
+    .vehicle {
+      margin: 10px;
+      padding: 5px;
+    }
     main h2 {
       display: none;
     }
