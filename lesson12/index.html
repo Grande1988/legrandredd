@@ -69,7 +69,7 @@
         <h1>Home</h1>
         <section class="options">
             <div class="vehicle">
-                <img src="images/scooter__2_-removebg-preview.png" alt>
+                <img src="images/scooter.jpg" alt>
                 <p>
                     "Explore the island, feel the wind in your hair, and take in the 
                     beautiful scenery of Cozumel on one of our easy-to-use scooters!
@@ -77,42 +77,52 @@
                     got you covered."
                 </p>
                 <button onclick="document.loacation='reservations.html'">
-                <span>Reserve yours now!
-                </span>
+                <span>Reserve yours now!</span>
                 </button>
             </div>
-
+            <div class="vehicle">
+              <img src="images/offroad-5044679_640.jpg" alt>
+              <p>
+                  "Looking to take the whole family on an adventure through the 
+                  rolling hills of Cozumel? Scoots UTVs provide an exceptional
+                  experience that will make unforgettable memories together."
+              </p>  
+              <button onclick="document.location='reservations.html'">
+              <span>Reserve yours now!</span>
+            </button>
+            </div>
+            <div class="vehicle">
+                <img src="images/jeep.jpg" alt>
+                <p>
+                    "If you're looking to get into the most rugged terrain of 
+                    Cozumel, one of our Jeeps is going to be the perfect toy for 
+                    your excursion. Soak in the sunshine and fresh air as you cruise
+                    around the island in style."
+                </p>
+                <button onlcick="document.location='reservations.html'">
+                    <span>Reserve yours now!</span>
+                </button>
+            </div>
+        </section>
+        <section class="currentWeather">
+            <h2>Cozumel Current Weather Conditions</h2>
+            <div>
+                "The current weather condition for Cozumel is "
+                <span id="weather">broken clouds</span>
+                " with the humidity sitting at " 
+                <span id="humidity">78</span>
+                "%. The current temperature is "
+                <span id="temp">77</span>
+                "° F, but it feels like "
+                <span id="feels">78</span>
+                "° F."
+            </div>
         </section>
         
+
     </main>
 
     <footer>
-        <section class="contact-us">
-          
-          <div class="address">
-            <b>Base Camp to Adventure Weather Site</b>
-            <br>
-            
-                            103 S Appleview Dr.
-            <br>
-            
-                            Preston, Idaho 83263
-            <br>
-           
-                            ☎ 333-456-7890
-            <br>
-            
-           
-            
-          </div>
-          <br>
-        </section>        
-          <div class="contact">
-            <span class="site-name">Base Camp to Adventure Weather</span><br>
-            <br>
-            contact@bcaweather.com
-          </div>
-      
-          <div class="footer">LeGrand Redd | 
+        <p>LeGrand Redd | BYU-Idaho | 2020</p>
           <script src="scripts/currentDate.js"></script>
     </footer>
