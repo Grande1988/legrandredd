@@ -55,6 +55,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1000x;
     margin: auto;
+    
   }
   .places:nth-child(odd) {
     margin: 1rem auto;
