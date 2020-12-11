@@ -235,5 +235,12 @@ form label.top input:required:valid {
     clear: both;
   }
 
+#tours-grid-box {
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
 
+#tours-main {
+    line-height: 1.5;
+}
   
