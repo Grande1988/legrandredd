@@ -138,10 +138,73 @@
                         <label class="sbs"><input type="radio" name="vehicle" value="jeep2dr">Jeep Wranger 2door</label>
                         <label class="top">Pick Up or Delivery Date :<input type="date" name="pickupdate"
                                 required></label><br>
-                        <label classs="sbs"></label>
+                        <label class="top">Return Date :<input type="date" name="return date" required></label><br>
+                        <div>Select Vehicle Location for Pick Up:</div>
+                        <label class="sbs"><input type="radio" name="location" value="playacarmen"> ~Scoots~ Cozumel
+                            Ferry Dock<br>
+                        Av. Rafael E. Melgar, Centro<br>
+                        77600 San Miguel de Cozumel<br>
+                        Quintana Roo Mexico</label>
+                    <label class="sbs"><input type="radio" name="location" value="puertamaya"> ~Scoots~ Terminal Puerta Maya<br>
+                    77600 San Miguel de Cozumel<br>
+                    Quintana Roo, Mexico</label><br>
+                <label>Type YES if you want your vehicle<br>
+                       delivered. List the address for delivery.<br>
+                       Please specify time desired for delivery.<br>
+                       Indlude any other necessary instructions:<br><br>
+                    <textarea name="comments" class="space"></textarea></label><br><br>
                     </fieldset>
+                    <fieldset id="field2" class="field">
+                        <legend>Credit Card and Billing</legend>
+                        <div>Select Type of Credit Card :</div>
+                        <label class="sbs"><input type="radio" name="card" value="citi"> Citi</label>
+                        <label class="sbs"><input type="radio" name="card" value="visa"> Visa</label>
+                        <label class="sbs"><input type="radio" name="card" value="discover"> Discover</label>
+                        <label class="sbs"><input type="radio" name="card" value="mastercard"> Mastercard</label>
+                        <label class="sbs"><input type="radio" name="card" value="american express"> American
+                            Express</label><br>
+                        <label class="top">Name on Credit Card :<input type="text" name="name"
+                                placeholder="Captain America" title="Must be at least 5 characters"
+                                pattern="^[a-zA-Z\s\.\-]{5,}$" required></label>
+                        <label class="top" for="adress">Address :<input type="text" id="adress" name="address"
+                                placeholder="101 W. Dream St." title="Must be at least 6 characters"
+                                pattern="^[a-zA-Z\s\.\,\#\0-9\-]{6,}$" required></label>
+                        <label class="top" for="city"><i class="fa fa-institution"></i> City :
+                            <input type="text" id="city" name="city" title="Must be at least 3 characters"
+                                pattern="^[a-zA-Z\s\.\-]{3,}$" placeholder="Gotham City" required></label>
+                        <label class="top">Zipcode :<input type="number" name="zipcode" placeholder="12345"
+                                required></label>
+                        <label class="top" for="expmonth">Exp Month :
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September" required></label>
+                        <label class="top" for="expyear">Exp Year :
+                            <input type="text" id="expyear" name="expyear" placeholder="2022" required></label>
+                        <label class="top" for="cvv">CVV :
+                            <input type="text" id="cvv" name="cvv" placeholder="410" required></label>
+                    </fieldset>
+                    <fieldset id="field3" class="field">
+                        <legend>Contact Information</legend>
+                        <label class="top">First Name :<input type="text" name="name" placeholder="Captain"
+                                title="Must be at least 2 characters" pattern="^[a-zA-Z\s\.\-]{2,}$" required></label>
+                        <label class="top">Last Name :<input type="text" name="name" placeholder="America"
+                                title="Must be at least 2 characters" pattern="^[a-zA-Z\s\.\-]{2,}$" required></label>
+                        <label class="top">Email :<input type="email" name="email"
+                                placeholder="captain_america@email.com" required></label>
+                        <label class="top">Telephone :<input id="tel" type="tel" name="phone" class="masked"
+                                required></label>
+                        <p id="finePrint">**You must fill out a separate form for each vehicle you wish to reserve.
+                            An additional 50$ deposit is required to reserve EACH vehicle.
+                            Your credit card will be charged $50 and goes towards your rental fee. To cancel your
+                            reservation and receive a refund
+                            on your deposit, send an email to <u>scoots2rent@gmail.com</u> within 24 hours of submitting
+                            this form, stating that you wish to cancel your reservation.
+                        </p>
+                    </fieldset>
+                    <input type="submit" value="Reserve My Vehicle" class="submitBtn"><br><br>
                 </form>
             </div>
+        </div>
+    </main>
+    </body>
                 
             </div>
         </div>
