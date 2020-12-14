@@ -194,6 +194,13 @@
       margin-right: 30px;
       
     }
+
+    #tours-grid-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 20px;
+      color: black;
+    }
     /* ---------- footer ---------- */
   
     footer {
