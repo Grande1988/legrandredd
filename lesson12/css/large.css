@@ -100,6 +100,39 @@
     width: 80%;
     margin: 0.3rem 10%;
   }
+
+  #tour-grid-box {
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 87%;
+  }
+
+    #tour1,
+    #tour2,
+    #tour3,
+    #tour4,
+    #tour5,
+    #tour6,
+    #tour7,
+    #tour8,
+    #tour9,
+    #tour10,
+    #tour11,
+    #tour12,
+    #tour13,
+    #tour14,
+    #tour15,
+    #tour16,
+    #tour17,
+    #tour18  {
+        padding: 0 20px;
+    }
+
+    #tours-grid-box img {
+        width: 100%;
+    }
  /* ---------- gallery ---------- */
 
   .gallery {
