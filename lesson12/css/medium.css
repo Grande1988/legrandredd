@@ -206,7 +206,13 @@
       margin-bottom: 20px;
     }
 
-
+    #tour1, #tour2, #tour3, #tour4, #tour5, #tour6, #tour7, #tour8, #tour9, #tour10, #tour11, #tour12, #tour13, #tour14, #tour15, #tour16, #tour17, #tour18 {
+      border: black solid .5px;
+      border-radius: 10px;
+      margin: 15px;
+      background-color: white;
+      padding-top: 10px;
+  }
     /* ---------- footer ---------- */
   
     footer {
