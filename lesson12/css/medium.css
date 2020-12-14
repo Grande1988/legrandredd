@@ -201,6 +201,12 @@
       margin: 20px;
       color: black;
     }
+
+    #tours-grid-box img, figure {
+      margin-bottom: 20px;
+    }
+
+
     /* ---------- footer ---------- */
   
     footer {
