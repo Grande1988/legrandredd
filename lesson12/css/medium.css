@@ -128,6 +128,10 @@
       justify-content: center;
     }
   
+    #forecast img {
+      width: 100%;
+    }
+    
     .current picture {
     }
   
