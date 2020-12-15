@@ -267,6 +267,12 @@ h2, h3, h4, h5 {
     border: solid 1px;
 }
 
+.currentWeather {
+    margin: 15px;
+    border: solid 3px black;
+    background-color: white;
+}
+
 #tours-grid-box img, figure {
     display: block;
     margin: auto auto 50px auto;
