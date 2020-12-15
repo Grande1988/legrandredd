@@ -237,6 +237,20 @@ h2, h3, h4, h5 {
     text-align: center;
 }
 
+#forecast {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px;
+    font-size: 30px;
+    border: solid 1px black;
+}
+
+#forecast img {
+    border: solid 2px black;
+    border-radius: 100%;
+    background-color: #30aec9;
+    margin-top: 10px;
+}
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
     content: "";
@@ -251,6 +265,12 @@ h2, h3, h4, h5 {
 
 #tours-grid-box img {
     border: solid 1px;
+}
+
+.currentWeather {
+    margin: 15px;
+    border: solid 3px black;
+    background-color: #ABDADC;
 }
 
 #tours-grid-box img, figure {
