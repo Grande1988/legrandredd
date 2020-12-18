@@ -201,7 +201,7 @@ form label.top select {
 form label.sbs {
     display: block;
     padding: .75rem 0;
-    color: #555;
+    color: black;
 }
 
 form input.submitButn {
