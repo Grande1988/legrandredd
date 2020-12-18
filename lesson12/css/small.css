@@ -33,7 +33,11 @@ body {
     decoration-color-1: rgba(41, 101, 138, 1);
     decoration-color-2: rgba(24, 174, 45, 1);
 }
-
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
