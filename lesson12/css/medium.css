@@ -135,9 +135,10 @@
     .current picture {
     }
   
-    section.forecast {
-      display: flex;
-      flex-flow: column nowrap;
+    section#forecast {
+      margin: 2%;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
     }
     .places {
       display: flex;
