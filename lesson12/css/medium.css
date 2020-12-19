@@ -135,7 +135,7 @@
     .current picture {
     }
   
-    section#forecast {
+    .forecast {
       margin: 2%;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
