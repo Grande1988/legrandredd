@@ -1,68 +1,63 @@
-//ADD the key and change units to imperial
-const mydate = new Date();
-console.log(mydate);
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=Cozumel&units=imperial&APPID=abe726d4fa97f7d629527a984b3b6ae0';
+fetch(url)
+.then((response) => response.json())
+.then((cozumel) => {
+  console.log(cozumel);
+  
+document.getElementById('current-temp').textContent = Math.round(cozumel.main.temp);
+document.getElementById('hi').textContent = Math.round(cozumel.main.temp_max);
+document.getElementById('humidity').textContent = cozumel.main.humidity;
+document.getElementById('windspeed').textContent = Math.round(cozumel.wind.speed);
+document.getElementById('conditions').textContent = cozumel.weather[0].main;
+document.getElementById('feelsLike').textContent = Math.round(cozumel.main.feels_like);
 
-const today = mydate.getDay();
+//Get today's icon
+const imgsrc = 'https://openweathermap.org/img/w/' + cozumel.weather[0].icon + '.png';
+    const des = cozumel.weather[0].description;
+    document.getElementById('source').setAttribute = imgsrc;
+    document.getElementById('icon').setAttribute('src', imgsrc);
+    document.getElementById('icon').setAttribute('alt', des);
 
-let forecastDayNumber = today;
-console.log(forecastDayNumber);
 
-const myweekday = new Array(7);
-myweekday[0] = "Sunday";
-myweekday[1] = "Monday";
-myweekday[2] = "Tuesday";
-myweekday[3] = "Wednesday";
-myweekday[4] = "Thursday";
-myweekday[5] = "Friday";
-myweekday[6] = "Saturday";
+});
 
-console.log(myweekday[today]);
 
-//ADD the key and change units to imperial
-const apiURLf = "//api.openweathermap.org/data/2.5/forecast?id=3530103&appid=e193587ff0f2ebc68b827b7bbec44563&units=imperial";
 
-//Go fetch it and then wait for a response.
-fetch(apiURLf)
-    .then((response) => response.json())
-    .then((weatherForecast) => {
-        //Once it comes back, display it to the console.
-        console.log(weatherForecast);
 
-        let mylist = weatherForecast.list;
 
-        let forecastDayNumber = today;
-        console.log(forecastDayNumber);
 
-        for (let i = 0; i < mylist.length; i++) {
+//Fetch JSON weather data from openweathermap
+const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?q=Cozumel&units=imperial&APPID=abe726d4fa97f7d629527a984b3b6ae0';
 
-            let time = mylist[i].dt_txt;
-            if (time.includes('21:00:00')) {
-                console.log("Found an entry with 18:00:00 in the time. It was report:" + i + " from the mylist of 40");
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((forecast) => {
+    console.log(forecast);
 
-                forecastDayNumber += 1;
-                if (forecastDayNumber === 7) {
-                    forecastDayNumber = 0;
-                }
+  const fiveDayForecast = forecast.list.filter(x => x.dt_txt.includes('12:00:00'));
+  console.log(fiveDayForecast);
 
-                let theDayName = document.createElement("h3");
-                theDayName.textContent = myweekday[forecastDayNumber];
-                console.log(">" + myweekday[forecastDayNumber]);
+  const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  let day = 0;
+  fiveDayForecast.forEach(cast => {
+    let d = new Date(cast.dt_txt);
+    document.getElementById('current-temp' + (day + 1)).textContent = Math.round(cast.main.temp);
+    document.getElementById('day' + (day + 1)).textContent = weekDays[d.getDay()] + "'s";
+    document.getElementById('hi' + (day + 1)).textContent = Math.round(cast.main.temp_max);
+    document.getElementById('lo' + (day + 1)).textContent = Math.round(cast.main.temp_min);
+    document.getElementById('feelsLike' + (day + 1)).textContent = Math.round(cast.main.feels_like);
+    document.getElementById('conditions' + (day + 1)).textContent = cast.weather[0].main;
+    document.getElementById('humidity' + (day + 1)).textContent = cast.main.humidity;
+    document.getElementById('windspeed' + (day + 1)).textContent = Math.round(cast.wind.speed);
+    //Get icon
+    const imagesrc = 'https://openweathermap.org/img/w/' + cast.weather[0].icon + '.png';
+    const desc = cast.weather[0].description;
+    document.getElementById('imagesrc' + (day + 1)).setAttribute = imagesrc;
+    document.getElementById('icon' + (day + 1)).setAttribute('src', imagesrc);
+    document.getElementById('icon' + (day + 1)).setAttribute('alt', desc);
 
-                let theTemp = document.createElement("p");
-                theTemp.textContent = weatherForecast.list[i].main.temp + "\xB0";
+    day++;
+    
+  });
 
-                let iconcode = weatherForecast.list[i].weather[0].icon;
-                let iconPath = "//openweathermap.org/img/w/" + iconcode + ".png";
-                let theIcon = document.createElement("img");
-                theIcon.src = iconPath
-
-                let theDay = document.createElement("div");
-                theDay.appendChild(theDayName);
-                theDay.appendChild(theTemp);
-                theDay.appendChild(theIcon);
-
-                document.getElementById('forecast').appendChild(theDay);
-
-            } // end if
-        } // end for
-    }); //end of "then" fat arrow function
+  });
