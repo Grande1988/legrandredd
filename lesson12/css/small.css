@@ -241,7 +241,7 @@ h2, h3, h4, h5 {
     text-align: center;
 }
 
-#forecast {
+.forecast {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: 10px;
@@ -249,7 +249,7 @@ h2, h3, h4, h5 {
     border: solid 1px black;
 }
 
-#forecast img {
+.forecast img {
     border: solid 2px black;
     border-radius: 100%;
     background-color: #30aec9;
